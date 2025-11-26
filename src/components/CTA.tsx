@@ -17,9 +17,28 @@ const CTA: React.FC = () => {
 
                         <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
 
-                        <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-4">
-                        <AppStoreButton />
-                        <PlayStoreButton />
+                        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+                            <a href={ctaDetails.getStartedUrl} className="w-full sm:w-auto">
+                                <button
+                                    type="button"
+                                    className="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-primary-accent"
+                                >
+                                    Get started
+                                </button>
+                            </a>
+                            <a href={ctaDetails.scheduleDemoUrl} className="w-full sm:w-auto">
+                                <button
+                                    type="button"
+                                    className="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-primary-accent"
+                                >
+                                    Schedule demo
+                                </button>
+                            </a>
+                        </div>
+
+                        <div className="hidden">
+                            <AppStoreButton />
+                            <PlayStoreButton />
                         </div>
                     </div>
                 </div>
