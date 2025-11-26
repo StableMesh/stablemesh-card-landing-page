@@ -20,6 +20,7 @@ Please check out the documentation below to get started.
 - Access to **31+ icon packs** via [React Icons](https://react-icons.github.io/react-icons/)
 - Near-perfect **Lighthouse score**
 - Modular, responsive, and **scalable components**
+- Light/dark theme toggle with preference persistence
 - **Free lifetime updates**
 
 ---
@@ -52,7 +53,7 @@ Before starting, make sure you have the following installed:
 
 1. **Install dependencies**: Run `npm install`
 2. **Run the development server**: `npm run dev`
-3. **View your project**: Open [localhost:3000](http://localhost:3000)
+3. **View your project**: Open [localhost:3002](http://localhost:3002)
 
 ---
 

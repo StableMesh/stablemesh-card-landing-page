@@ -4,13 +4,35 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #FED835;
+  --foreground: #0f172a;
+  --primary: #fed835;
   --secondary: #304fff;
-
   --primary-accent: #e5c230;
-  --foreground-accent: #454545;
-  --hero-background: #F3F3F5;
+  --foreground-accent: #475467;
+  --hero-background: #f3f3f5;
+  --card: #ffffff;
+  --muted: #f4f4f5;
+  --border: rgba(15, 23, 42, 0.12);
+  --hero-grid-line: rgba(128, 128, 128, 0.07);
+  --hero-glow-via: rgba(233, 238, 255, 0.5);
+  --hero-glow-to: rgba(202, 208, 230, 0.5);
+}
+
+:root[data-theme='dark'],
+[data-theme='dark'] {
+  --background: #05070c;
+  --foreground: #e4e9ff;
+  --primary: #fed835;
+  --secondary: #8aa4ff;
+  --primary-accent: #e5c230;
+  --foreground-accent: #b5c0da;
+  --hero-background: #0b0f1c;
+  --card: #0f172a;
+  --muted: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.08);
+  --hero-grid-line: rgba(255, 255, 255, 0.05);
+  --hero-glow-via: rgba(77, 90, 136, 0.35);
+  --hero-glow-to: rgba(5, 7, 16, 0.95);
 }
 
 html {
@@ -25,6 +47,7 @@ body {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  transition: background-color 250ms ease, color 250ms ease;
 }
 
 @layer utilities {
@@ -51,4 +74,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+
+.hero-grid {
+  background-color: var(--hero-background);
+  background-image:
+    linear-gradient(to right, var(--hero-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--hero-grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+}
+
+.hero-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    var(--hero-glow-via),
+    var(--hero-glow-to)
+  );
 }
