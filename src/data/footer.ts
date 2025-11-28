@@ -7,7 +7,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "Designed for digital teams spending online, globally.",
     quickLinks: [
         {
             text: "Features",
@@ -22,16 +22,18 @@ export const footerDetails: {
             url: "#testimonials"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'contact@stablemesh.io',
+    telephone: '',
     socials: {
         // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
+        x: 'https://x.com/StableMesh',
+        // twitter: 'https://x.com/StableMesh',
+        // facebook: 'https://facebook.com',
+        youtube: 'https://www.youtube.com/@StableMesh',
+        tiktok: 'https://www.tiktok.com/@StableMesh',
+        telegram: 'https://t.me/StableMesh',
         linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        // instagram: 'https://www.instagram.com',
     }
 }
