@@ -8,7 +8,6 @@ import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import LanguageSwitcher from './LanguageSwitcher';
-import ThemeToggle from './ThemeToggle';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 import { useLanguage } from './LanguageProvider';
@@ -47,21 +46,17 @@ const Header: React.FC = () => {
                         })}
                         <li>
                             <Link href="#cta" className="text-slate-900 bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                {t('menu.download')}
+                                {t('menu.getStarted')}
                             </Link>
                         </li>
                         <li>
                             <LanguageSwitcher />
-                        </li>
-                        <li>
-                            <ThemeToggle />
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-2">
                         <LanguageSwitcher />
-                        <ThemeToggle />
                         <button
                             onClick={toggleMenu}
                             type="button"

@@ -1,70 +1,75 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { FiActivity, FiBriefcase, FiDollarSign, FiGitBranch, FiLock, FiPercent, FiPieChart, FiShield, FiTrendingUp, FiZap, FiEye } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Virtual Card Infrastructure",
+        description: "Issue and manage virtual cards in seconds with enterprise-grade controls, security, and real-time visibility.",
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Instant issuance",
+                description: "Create virtual cards on demand for teams, vendors, or specific use-cases in just a few clicks.",
+                icon: <FiZap size={26} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
+                title: "3DS authentication",
+                description: "Protect every transaction with strong 3D Secure authentication and adaptive risk controls.",
+                icon: <FiShield size={26} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
-                icon: <FiTrendingUp size={26} />
+                title: "Card freezing and unfreezing",
+                description: "Instantly pause or resume cards to respond to suspicious activity or changing business needs.",
+                icon: <FiLock size={26} />
+            },
+            {
+                title: "Real-time transaction visibility",
+                description: "Monitor spend as it happens with granular transaction data and rich metadata.",
+                icon: <FiActivity size={26} />
             }
         ],
         imageSrc: "/images/feature-1.png"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. StableMesh makes investing accessible and straightforward.",
+        title: "Stablecoin Funding",
+        description: "Fund cards and payments with stablecoins across major chains, without touching the traditional banking rails.",
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
+                title: "Instant deposits",
+                description: "Move funds from wallet to card balance in seconds, with no waiting for bank settlement.",
                 icon: <FiDollarSign size={26} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Supports TRON, Ethereum, and BNB Chain",
+                description: "Fund using major stablecoin networks that match your treasury and liquidity setup.",
+                icon: <FiGitBranch size={26} />
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "Multi-chain wallet integration",
+                description: "Connect multiple wallets and manage balances from a single control layer.",
+                icon: <FiBriefcase size={26} />
             }
         ],
         imageSrc: "/images/feature-2.png"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing StableMesh employs cutting-edge security measures.",
+        title: "Zero-Fee Pricing Model",
+        description: "Scale spend without worrying about opaque markups, hidden fees, or unpredictable FX spreads.",
         bullets: [
             {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
+                title: "No hidden fees",
+                description: "Avoid surprise platform charges, junk fees, and add-ons that erode your margins.",
+                icon: <FiDollarSign size={26} />
             },
             {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
+                title: "Industry-leading FX rates",
+                description: "Access competitive foreign exchange with transparent spreads on every transaction.",
+                icon: <FiPercent size={26} />
             },
             {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
+                title: "Fully transparent cost structure",
+                description: "See exactly what you pay per transaction, card, and program — with no fine print.",
+                icon: <FiEye size={26} />
             }
         ],
         imageSrc: "/images/feature-3.png"

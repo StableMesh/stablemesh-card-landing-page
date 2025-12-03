@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
   @apply w-fit h-10 sm:h-12;
 }
 
+#logos svg path {
+  fill: var(--foreground);
+}
+
 .benefit-section:last-of-type > div {
   @apply mb-10;
 }
