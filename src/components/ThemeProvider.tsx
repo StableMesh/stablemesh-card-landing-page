@@ -25,18 +25,15 @@ const isValidTheme = (value: string | null): value is Theme =>
   value === 'light' || value === 'dark';
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setThemeState] = useState<Theme>('light');
+  // Force dark mode by default
+  const [theme, setThemeState] = useState<Theme>('dark');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = window.localStorage.getItem(STORAGE_KEY);
-
-    if (isValidTheme(savedTheme)) {
-      setThemeState(savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setThemeState('dark');
-    }
-
+    // Ensure document theme is dark on mount and persist it
+    document.documentElement.dataset.theme = 'dark';
+    window.localStorage.setItem(STORAGE_KEY, 'dark');
+    setThemeState('dark');
     setMounted(true);
   }, []);
 
