@@ -7,11 +7,14 @@ import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
+import LanguageSwitcher from './LanguageSwitcher';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
+import { useLanguage } from './LanguageProvider';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { t } = useLanguage();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -31,22 +34,29 @@ const Header: React.FC = () => {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex items-center space-x-4">
-                        {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
-                                    {item.text}
-                                </Link>
-                            </li>
-                        ))}
+                        {menuItems.map(item => {
+                            const translationKey = `menu.${item.text.toLowerCase()}`;
+                            return (
+                                <li key={item.text}>
+                                    <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                        {t(translationKey) !== translationKey ? t(translationKey) : item.text}
+                                    </Link>
+                                </li>
+                            );
+                        })}
                         <li>
                             <Link href="#cta" className="text-slate-900 bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
+                                {t('menu.download')}
                             </Link>
+                        </li>
+                        <li>
+                            <LanguageSwitcher />
                         </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden flex items-center gap-2">
+                        <LanguageSwitcher />
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -77,16 +87,19 @@ const Header: React.FC = () => {
             >
                 <div id="mobile-menu" className="md:hidden bg-[color:var(--card)] shadow-lg border-t border-border">
                     <ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
-                        {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
-                                    {item.text}
-                                </Link>
-                            </li>
-                        ))}
+                        {menuItems.map(item => {
+                            const translationKey = `menu.${item.text.toLowerCase()}`;
+                            return (
+                                <li key={item.text}>
+                                    <Link href={item.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                        {t(translationKey) !== translationKey ? t(translationKey) : item.text}
+                                    </Link>
+                                </li>
+                            );
+                        })}
                         <li>
                             <Link href="#cta" className="text-slate-900 bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
+                                {t('menu.getStarted')}
                             </Link>
                         </li>
                     </ul>

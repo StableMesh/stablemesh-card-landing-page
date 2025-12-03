@@ -31,8 +31,8 @@ export const footerDetails: {
         // facebook: 'https://facebook.com',
         youtube: 'https://www.youtube.com/@StableMesh',
         tiktok: 'https://www.tiktok.com/@StableMesh',
-        telegram: 'https://t.me/StableMesh',
-        linkedin: 'https://www.linkedin.com',
+        telegram: 'https://t.me/stablemesh_global',
+        // linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
         // instagram: 'https://www.instagram.com',
     }

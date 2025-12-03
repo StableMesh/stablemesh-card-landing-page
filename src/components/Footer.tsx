@@ -68,13 +68,13 @@ const Footer: React.FC = () => {
                                 StableMesh provides technology services only, including account management, customer interface, and data visualization. StableMesh is not a bank, payment institution, e-money issuer, money services business, or stored-value facility operator, and does not receive, hold, safeguard, transmit, or control customer funds or payment instruments.
                             </p>
                             <p>
-                                All card issuance, card management, transaction processing, settlement, and custody of funds are provided by WorldFirst (Singapore) Merchant Services Pte. Ltd., a company within Ant Group. The card program, customer funds, balances, transactions, and all related regulated services are operated and managed by WorldFirst in accordance with applicable laws and regulatory requirements.
+                                All card issuance, card management, transaction processing, settlement, and custody of funds are provided by a licensed card issuer. The card program, customer funds, balances, transactions, and all related regulated services are operated and managed by the licensed card issuer in accordance with applicable laws and regulatory requirements.
                             </p>
                             <p>
                                 StableMesh acts solely as a technology platform and customer management interface. StableMesh does not provide financial advice, payment services, or regulated financial products.
                             </p>
                             <p>
-                                Users contract directly with WorldFirst for card-related and payment services. All regulatory obligations related to the card program, including KYC/AML, safeguarding of funds, dispute handling, and transaction processing, are undertaken by WorldFirst.
+                                Users contract directly with the licensed card issuer for card-related and payment services. All regulatory obligations related to the card program, including KYC/AML, safeguarding of funds, dispute handling, and transaction processing, are undertaken by the licensed card issuer.
                             </p>
                             <p>
                                 Nothing on this website constitutes an offer, solicitation, or investment advice in any jurisdiction where such activities are prohibited. Services may not be available in all regions.
