@@ -21,11 +21,11 @@
 :root[data-theme='dark'],
 [data-theme='dark'] {
   --background: #05070c;
-  --foreground: #e4e9ff;
+  --foreground: #ffffff;
   --primary: #fed835;
   --secondary: #8aa4ff;
   --primary-accent: #e5c230;
-  --foreground-accent: #b5c0da;
+  --foreground-accent: #e5e7eb;
   --hero-background: #0b0f1c;
   --card: #0f172a;
   --muted: rgba(255, 255, 255, 0.08);

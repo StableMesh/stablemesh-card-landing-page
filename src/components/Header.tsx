@@ -8,6 +8,7 @@ import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 import { useLanguage } from './LanguageProvider';
@@ -52,11 +53,15 @@ const Header: React.FC = () => {
                         <li>
                             <LanguageSwitcher />
                         </li>
+                        <li>
+                            <ThemeToggle />
+                        </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-2">
                         <LanguageSwitcher />
+                        <ThemeToggle />
                         <button
                             onClick={toggleMenu}
                             type="button"
