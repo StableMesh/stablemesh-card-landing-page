@@ -21,15 +21,24 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     </span>
                     {typeof price === 'number' && <span className="text-lg font-normal text-foreground-accent">/mo</span>}
                 </p>
-                <button className={clsx(
-                    "w-full py-3 px-4 rounded-full transition-colors",
-                    {
-                        "bg-primary hover:bg-primary-accent text-slate-900": highlight,
-                        "bg-hero-background text-foreground border border-border hover:bg-muted": !highlight,
-                    }
-                )}>
-                    Get Started
-                </button>
+                <a 
+                    href="https://app.stablemesh.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={clsx(
+                        "w-full py-3 px-4 rounded-full transition-colors block text-center",
+                        {
+                            "bg-primary hover:bg-primary-accent text-slate-900": highlight,
+                            "bg-hero-background text-foreground border border-border hover:bg-muted": !highlight,
+                        }
+                    )}
+                >
+                    {name === 'Starter'
+                        ? 'Start for free'
+                        : name === 'Enterprise'
+                            ? 'Schedume demo'
+                            : 'Get Started'}
+                </a>
             </div>
             <div className="p-6 mt-1">
                 <p className="font-bold mb-0">FEATURES</p>

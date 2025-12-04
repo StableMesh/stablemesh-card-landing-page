@@ -3,6 +3,7 @@ import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ";
 import Logos from "@/components/Logos";
+import AcceptedBy from "@/components/AcceptedBy";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
@@ -13,7 +14,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Logos />
+      <AcceptedBy />
       <Container>
         <Benefits />
 
@@ -32,6 +33,8 @@ const HomePage: React.FC = () => {
         >
           <Testimonials />
         </Section>
+
+        <Logos />
 
         <FAQ />
 

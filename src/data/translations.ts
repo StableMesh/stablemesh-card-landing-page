@@ -24,6 +24,10 @@ export const translations: Record<string, Record<string, string>> = {
     'footer.contactUs': 'Contact Us',
     'footer.disclaimer': 'Disclaimer & Regulatory Notice',
     
+    // AcceptedBy
+    'accepted.heading': 'Accepted by 140M+ merchants worldwide',
+    'accepted.subtext': 'Virtual cards can be used with major payment ecosystems and global brands.',
+    
     // Common
     'common.email': 'Email',
   },
@@ -52,6 +56,10 @@ export const translations: Record<string, Record<string, string>> = {
     'footer.contactUs': '联系我们',
     'footer.disclaimer': '免责声明和监管通知',
     
+    // AcceptedBy
+    'accepted.heading': '被全球超过 1.4 亿家商户接受',
+    'accepted.subtext': '通过 StableMesh 持牌发卡机构发行的虚拟卡可用于主流支付生态和全球知名品牌商户。',
+    
     // Common
     'common.email': '电子邮件',
   },
@@ -79,6 +87,10 @@ export const translations: Record<string, Record<string, string>> = {
     'footer.quickLinks': 'Enlaces Rápidos',
     'footer.contactUs': 'Contáctanos',
     'footer.disclaimer': 'Descargo de Responsabilidad y Aviso Regulatorio',
+    
+    // AcceptedBy
+    'accepted.heading': 'Aceptado por más de 140M de comercios en todo el mundo',
+    'accepted.subtext': 'Las tarjetas virtuales emitidas a través del emisor de tarjetas autorizado de StableMesh pueden utilizarse en los principales ecosistemas de pago y marcas globales.',
     
     // Common
     'common.email': 'Correo electrónico',

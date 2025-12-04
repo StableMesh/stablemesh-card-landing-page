@@ -65,19 +65,22 @@ const Footer: React.FC = () => {
                         <h3 className="text-lg font-semibold mb-4 text-foreground">Disclaimer & Regulatory Notice</h3>
                         <div className="text-sm text-foreground-accent space-y-3 leading-relaxed">
                             <p>
-                                StableMesh provides technology services only, including account management, customer interface, and data visualization. StableMesh is not a bank, payment institution, e-money issuer, money services business, or stored-value facility operator, and does not receive, hold, safeguard, transmit, or control customer funds or payment instruments.
+                                StableMesh provides technology and software services only, acting solely as a service facilitator and technical platform. Our services are limited to user interface, account dashboard, and data visualization tools. StableMesh does not operate as a bank, payment institution, e-money issuer, money services business, or stored-value facility operator.
                             </p>
                             <p>
-                                All card issuance, card management, transaction processing, settlement, and custody of funds are provided by a licensed card issuer. The card program, customer funds, balances, transactions, and all related regulated services are operated and managed by the licensed card issuer in accordance with applicable laws and regulatory requirements.
+                                StableMesh does not receive, hold, safeguard, transmit, control, or manage customer funds, payment instruments, or card balances at any time.
                             </p>
                             <p>
-                                StableMesh acts solely as a technology platform and customer management interface. StableMesh does not provide financial advice, payment services, or regulated financial products.
+                                All virtual or physical cards, account services, transaction processing, settlement, and custody of funds are provided exclusively by a licensed third-party card issuer in accordance with applicable laws and regulatory requirements. The card program and all regulated financial services are operated and managed solely by such licensed issuer.
                             </p>
                             <p>
-                                Users contract directly with the licensed card issuer for card-related and payment services. All regulatory obligations related to the card program, including KYC/AML, safeguarding of funds, dispute handling, and transaction processing, are undertaken by the licensed card issuer.
+                                StableMesh does not provide payment services, financial services, or regulated financial products. We do not offer financial advice, investment advice, or recommendations of any kind.
                             </p>
                             <p>
-                                Nothing on this website constitutes an offer, solicitation, or investment advice in any jurisdiction where such activities are prohibited. Services may not be available in all regions.
+                                Users enter into a direct contractual relationship with the licensed card issuer for all card-related and payment services. All regulatory obligations, including KYC/AML, compliance screening, safeguarding of funds, dispute management, and transaction processing, are the sole responsibility of the licensed issuer.
+                            </p>
+                            <p>
+                                Nothing on this website constitutes an offer, solicitation, or financial promotion in any jurisdiction where such activities are prohibited. Service availability may vary by region and is subject to local regulatory restrictions.
                             </p>
                         </div>
                     </div>

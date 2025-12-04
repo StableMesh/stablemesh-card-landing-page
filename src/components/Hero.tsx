@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                     <a href={ctaDetails.getStartedUrl} className="w-full sm:w-auto">
                         <button
                             type="button"
-                            className="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-primary-accent"
+                            className="w-full rounded-full bg-white px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-slate-100"
                         >
                             Get started
                         </button>
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
                     <a href={ctaDetails.scheduleDemoUrl} className="w-full sm:w-auto">
                         <button
                             type="button"
-                            className="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-primary-accent"
+                            className="w-full rounded-full bg-white/10 px-8 py-3 text-base font-semibold text-white transition-colors border border-white/20 hover:bg-white/20"
                         >
                             Schedule demo
                         </button>
