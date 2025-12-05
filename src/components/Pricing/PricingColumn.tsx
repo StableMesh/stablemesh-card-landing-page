@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { useLanguage } from "../LanguageProvider";
+import { useAppUrlWithReferral } from "@/utils";
 
 import { IPricing } from "@/types";
 
@@ -13,6 +14,7 @@ interface Props {
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     const { t } = useLanguage();
+    const appUrl = useAppUrlWithReferral();
     const { name, price, features } = tier;
 
     const getButtonText = () => {
@@ -36,7 +38,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     {typeof price === 'number' && <span className="text-lg font-normal text-foreground-accent">{t('pricing.price.perMonth')}</span>}
                 </p>
                 <a 
-                    href="https://app.stablemesh.io"
+                    href={appUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={clsx(

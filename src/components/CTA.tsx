@@ -2,12 +2,14 @@
 
 import { ctaDetails } from "@/data/cta"
 import { useLanguage } from "./LanguageProvider"
+import { useAppUrlWithReferral } from "@/utils"
 
 import AppStoreButton from "./AppStoreButton"
 import PlayStoreButton from "./PlayStoreButton"
 
 const CTA: React.FC = () => {
     const { t } = useLanguage();
+    const appUrl = useAppUrlWithReferral();
     
     return (
         <section id="cta" className="mt-10 mb-5 lg:my-20">
@@ -23,7 +25,7 @@ const CTA: React.FC = () => {
                         <p className="mx-auto max-w-xl md:px-5">{t('cta.subheading')}</p>
 
                         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                            <a href={ctaDetails.getStartedUrl} className="w-full sm:w-auto">
+                            <a href={appUrl} className="w-full sm:w-auto">
                                 <button
                                     type="button"
                                     className="w-full rounded-full bg-white px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-slate-100"

@@ -10,10 +10,12 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 import { useLanguage } from './LanguageProvider';
+import { useAppUrlWithReferral } from '@/utils';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useLanguage();
+    const appUrl = useAppUrlWithReferral();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -44,9 +46,9 @@ const Header: React.FC = () => {
                             );
                         })}
                         <li>
-                            <Link href="#cta" className="text-slate-900 bg-white hover:bg-slate-100 px-8 py-3 rounded-full transition-colors">
+                            <a href={appUrl} className="text-slate-900 bg-white hover:bg-slate-100 px-8 py-3 rounded-full transition-colors">
                                 {t('menu.getStarted')}
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <LanguageSwitcher />
@@ -97,9 +99,9 @@ const Header: React.FC = () => {
                             );
                         })}
                         <li>
-                            <Link href="#cta" className="text-slate-900 bg-white hover:bg-slate-100 px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                            <a href={appUrl} className="text-slate-900 bg-white hover:bg-slate-100 px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
                                 {t('menu.getStarted')}
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
