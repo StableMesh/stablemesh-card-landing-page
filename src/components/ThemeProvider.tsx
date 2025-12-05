@@ -21,9 +21,6 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 const STORAGE_KEY = 'preferred-theme';
 
-const isValidTheme = (value: string | null): value is Theme =>
-  value === 'light' || value === 'dark';
-
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   // Force dark mode by default
   const [theme, setThemeState] = useState<Theme>('dark');
