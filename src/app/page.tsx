@@ -8,7 +8,6 @@ import AcceptedBy from "@/components/AcceptedBy";
 import Benefits from "@/components/Benefits/Benefits";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -33,8 +32,6 @@ const HomePage: React.FC = () => {
         <Logos />
 
         <FAQ />
-
-        <Stats />
         
         <CTA />
       </Container>

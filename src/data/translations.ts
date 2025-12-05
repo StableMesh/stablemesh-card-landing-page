@@ -14,8 +14,8 @@ export const translations: Record<string, Record<string, string>> = {
     'hero.subheading': 'Designed for privacy-first payments with minimal cost.',
     
     // CTA
-    'cta.heading': 'Join Over 1 Million Users To Transform Your Finances',
-    'cta.subheading': 'Your journey to financial freedom starts here. Download StableMesh today and take the first step towards a brighter financial future!',
+    'cta.heading': 'Your global finance journey starts here.',
+    'cta.subheading': 'Spend, manage, and scale — with a platform built for modern businesses.',
     'cta.scheduleDemo': 'Schedule demo',
     'cta.getStarted': 'Get started',
     
@@ -123,7 +123,7 @@ export const translations: Record<string, Record<string, string>> = {
     // Stats
     'stats.stat1.description': 'Transactions processed securely every day, providing real-time insights.',
     'stats.stat2.description': 'Star rating, consistently maintained across app stores.',
-    'stats.stat3.description': 'Financial Institutions, seamlessly integrated, so you can manage all accounts.',
+    'stats.stat3.description': 'Use your virtual card in over 200 countries and regions.',
     
     // Logos
     'logos.trustedBy': 'Trusted by people at top web3 company',
@@ -147,8 +147,8 @@ export const translations: Record<string, Record<string, string>> = {
     'hero.subheading': '专为隐私优先的支付而设计，成本最低。',
     
     // CTA
-    'cta.heading': '加入超过100万用户，改变您的财务状况',
-    'cta.subheading': '您的财务自由之旅从这里开始。立即下载 StableMesh，迈出迈向更光明财务未来的第一步！',
+    'cta.heading': '您的全球金融之旅从这里开始。',
+    'cta.subheading': '消费、管理和扩展——专为现代企业打造的平台。',
     'cta.scheduleDemo': '预约演示',
     'cta.getStarted': '开始使用',
     
@@ -184,9 +184,9 @@ export const translations: Record<string, Record<string, string>> = {
     'pricing.button.scheduleDemo': '预约演示',
     'pricing.starter.feature1': '1 张免费虚拟卡',
     'pricing.starter.feature2': 'USDT/USDC 存款费用：$0',
-    'pricing.starter.feature3': 'USDT/USDC->USD 转换：1:1',
+    'pricing.starter.feature3': 'USDT/USDC->USD 转换：1比1',
     'pricing.starter.feature4': '加密货币提取费用：仅网络 gas 费',
-    'pricing.starter.feature5': '实时交易可见性',
+    'pricing.starter.feature5': '实时交易可见',
     'pricing.starter.feature6': '随时冻结卡片',
     'pricing.starter.feature7': '电子邮件/Telegram 支持',
     'pricing.pro.feature1': '最多 10 张虚拟卡',
@@ -256,7 +256,7 @@ export const translations: Record<string, Record<string, string>> = {
     // Stats
     'stats.stat1.description': '每天安全处理的交易，提供实时洞察。',
     'stats.stat2.description': '星级评级，在应用商店中持续保持。',
-    'stats.stat3.description': '金融机构，无缝集成，因此您可以管理所有账户。',
+    'stats.stat3.description': '您的虚拟卡可在超过 200 个国家和地区使用。',
     
     // Logos
     'logos.trustedBy': '受顶级 web3 公司人员信赖',
@@ -280,8 +280,8 @@ export const translations: Record<string, Record<string, string>> = {
     'hero.subheading': 'Diseñado para pagos con prioridad en la privacidad con costos mínimos.',
     
     // CTA
-    'cta.heading': 'Únete a más de 1 millón de usuarios para transformar tus finanzas',
-    'cta.subheading': 'Tu viaje hacia la libertad financiera comienza aquí. ¡Descarga StableMesh hoy y da el primer paso hacia un futuro financiero más brillante!',
+    'cta.heading': 'Tu viaje financiero global comienza aquí.',
+    'cta.subheading': 'Gasta, gestiona y escala — con una plataforma construida para empresas modernas.',
     'cta.scheduleDemo': 'Programar demostración',
     'cta.getStarted': 'Comenzar',
     
@@ -389,7 +389,7 @@ export const translations: Record<string, Record<string, string>> = {
     // Stats
     'stats.stat1.description': 'Transacciones procesadas de forma segura cada día, proporcionando insights en tiempo real.',
     'stats.stat2.description': 'Calificación de estrellas, mantenida consistentemente en las tiendas de aplicaciones.',
-    'stats.stat3.description': 'Instituciones Financieras, integradas sin problemas, para que puedas gestionar todas las cuentas.',
+    'stats.stat3.description': 'Usa tu tarjeta virtual en más de 200 países y regiones.',
     
     // Logos
     'logos.trustedBy': 'Confiado por personas en las principales empresas web3',

@@ -47,9 +47,9 @@ const AcceptedBy: React.FC = () => {
                 key={`${merchant.name}-${idx}`}
                 src={merchant.src}
                 alt={merchant.name}
-                width={150}
-                height={80}
-                className="h-16 md:h-16 w-auto object-contain merchant-logo"
+                width={75}
+                height={40}
+                className="h-8 md:h-8 w-auto object-contain merchant-logo"
               />
             ))}
           </div>

@@ -15,7 +15,7 @@ export const getStats = (t: (key: string) => string): IStats[] => [
         description: t('stats.stat2.description')
     },
     {
-        title: "200+ ",
+        title: "200+",
         icon: <PiGlobeFill size={34} className="text-green-600" />,
         description: t('stats.stat3.description')
     }

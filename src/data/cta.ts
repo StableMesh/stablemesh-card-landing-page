@@ -1,6 +1,6 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download StableMesh today and take the first step towards a brighter financial future!',
+    heading: 'Your global finance journey starts here.',
+    subheading: 'Spend, manage, and scale — with a platform built for modern businesses.',
     getStartedUrl: '#pricing',
     scheduleDemoUrl: 'https://calendly.com/stablemesh',
     appStoreUrl: '#',
