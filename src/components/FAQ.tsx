@@ -21,7 +21,7 @@ const FAQ: React.FC = () => {
                     <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
                         {t('faq.subtitle')}
                     </p>
-                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">contact@stablemesh.com</a>
+                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">contact@stablemesh.io</a>
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">
