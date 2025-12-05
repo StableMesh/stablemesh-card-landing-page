@@ -3,6 +3,10 @@
 import { useLanguage } from "./LanguageProvider";
 
 const Logos: React.FC = () => {
+    // Hidden per request
+    return null;
+    
+    // Unreachable code - kept for reference
     const { t } = useLanguage();
     
     return (

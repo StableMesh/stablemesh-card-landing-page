@@ -42,7 +42,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     className={clsx(
                         "w-full py-3 px-4 rounded-full transition-colors block text-center",
                         {
-                            "bg-primary hover:bg-primary-accent text-slate-900": highlight,
+                            "bg-white hover:bg-slate-100 text-slate-900": highlight,
                             "bg-hero-background text-foreground border border-border hover:bg-muted": !highlight,
                         }
                     )}

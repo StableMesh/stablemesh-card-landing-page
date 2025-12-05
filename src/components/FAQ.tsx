@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
         <section id="faq" className="py-10 lg:py-20">
             <div className="flex flex-col lg:flex-row gap-10">
                 <div className="">
-                    <p className="hidden lg:block text-foreground-accent">{t('faq.label')}</p>
+                    {/* <p className="hidden lg:block text-foreground-accent">{t('faq.label')}</p> */}
                     <SectionTitle>
                         <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">{t('faq.title')}</h2>
                     </SectionTitle>

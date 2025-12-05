@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                             );
                         })}
                         <li>
-                            <Link href="#cta" className="text-slate-900 bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
+                            <Link href="#cta" className="text-slate-900 bg-white hover:bg-slate-100 px-8 py-3 rounded-full transition-colors">
                                 {t('menu.getStarted')}
                             </Link>
                         </li>
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
                             );
                         })}
                         <li>
-                            <Link href="#cta" className="text-slate-900 bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
+                            <Link href="#cta" className="text-slate-900 bg-white hover:bg-slate-100 px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
                                 {t('menu.getStarted')}
                             </Link>
                         </li>

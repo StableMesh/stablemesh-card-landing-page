@@ -16,10 +16,6 @@ export const footerDetails: {
         {
             text: "Pricing",
             url: "#pricing"
-        },
-        {
-            text: "Testimonials",
-            url: "#testimonials"
         }
     ],
     email: 'contact@stablemesh.io',
