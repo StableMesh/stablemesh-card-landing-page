@@ -1,5 +1,8 @@
+'use client';
+
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
+import { useLanguage } from "../LanguageProvider";
 
 import { IPricing } from "@/types";
 
@@ -9,7 +12,18 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
+    const { t } = useLanguage();
     const { name, price, features } = tier;
+
+    const getButtonText = () => {
+        if (name === t('pricing.tier.starter')) {
+            return t('pricing.button.startFree');
+        } else if (name === t('pricing.tier.enterprise')) {
+            return t('pricing.button.scheduleDemo');
+        } else {
+            return t('pricing.button.getStarted');
+        }
+    };
 
     return (
         <div className={clsx("w-full max-w-sm mx-auto bg-card rounded-xl border border-border lg:max-w-full", { "shadow-lg": highlight })}>
@@ -19,7 +33,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     <span className={clsx({ "text-secondary": highlight })}>
                         {typeof price === 'number' ? `$${price}` : price}
                     </span>
-                    {typeof price === 'number' && <span className="text-lg font-normal text-foreground-accent">/mo</span>}
+                    {typeof price === 'number' && <span className="text-lg font-normal text-foreground-accent">{t('pricing.price.perMonth')}</span>}
                 </p>
                 <a 
                     href="https://app.stablemesh.io"
@@ -33,16 +47,12 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                         }
                     )}
                 >
-                    {name === 'Starter'
-                        ? 'Start for free'
-                        : name === 'Enterprise'
-                            ? 'Schedume demo'
-                            : 'Get Started'}
+                    {getButtonText()}
                 </a>
             </div>
             <div className="p-6 mt-1">
-                <p className="font-bold mb-0">FEATURES</p>
-                <p className="text-foreground-accent mb-5">Everything in basic, plus...</p>
+                <p className="font-bold mb-0">{t('pricing.features')}</p>
+                <p className="text-foreground-accent mb-5">{t('pricing.features.intro')}</p>
                 <ul className="space-y-4 mb-8">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-center">

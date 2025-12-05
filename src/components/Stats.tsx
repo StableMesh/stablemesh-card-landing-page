@@ -1,6 +1,12 @@
-import { stats } from "@/data/stats"
+'use client';
+
+import { useLanguage } from "./LanguageProvider";
+import { getStats } from "@/data/stats"
 
 const Stats: React.FC = () => {
+    const { t } = useLanguage();
+    const stats = getStats(t);
+    
     return (
         <section id="stats" className="py-10 lg:py-20">
             <div className="grid sm:grid-cols-3 gap-8">

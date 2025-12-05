@@ -2,73 +2,73 @@ import { FiActivity, FiBriefcase, FiDollarSign, FiGitBranch, FiLock, FiPercent, 
 
 import { IBenefit } from "@/types"
 
-export const benefits: IBenefit[] = [
+export const getBenefits = (t: (key: string) => string): IBenefit[] => [
     {
-        title: "Virtual Card Infrastructure",
-        description: "Issue and manage virtual cards in seconds with enterprise-grade controls, security, and real-time visibility.",
+        title: t('benefits.virtualCard.title'),
+        description: t('benefits.virtualCard.description'),
         bullets: [
             {
-                title: "Instant issuance",
-                description: "Create virtual cards on demand for teams, vendors, or specific use-cases in just a few clicks.",
+                title: t('benefits.virtualCard.bullet1.title'),
+                description: t('benefits.virtualCard.bullet1.description'),
                 icon: <FiZap size={26} />
             },
             {
-                title: "3DS authentication",
-                description: "Protect every transaction with strong 3D Secure authentication and adaptive risk controls.",
+                title: t('benefits.virtualCard.bullet2.title'),
+                description: t('benefits.virtualCard.bullet2.description'),
                 icon: <FiShield size={26} />
             },
             {
-                title: "Card freezing and unfreezing",
-                description: "Instantly pause or resume cards to respond to suspicious activity or changing business needs.",
+                title: t('benefits.virtualCard.bullet3.title'),
+                description: t('benefits.virtualCard.bullet3.description'),
                 icon: <FiLock size={26} />
             },
             {
-                title: "Real-time transaction visibility",
-                description: "Monitor spend as it happens with granular transaction data and rich metadata.",
+                title: t('benefits.virtualCard.bullet4.title'),
+                description: t('benefits.virtualCard.bullet4.description'),
                 icon: <FiActivity size={26} />
             }
         ],
         imageSrc: "/images/feature-1.png"
     },
     {
-        title: "Stablecoin Funding",
-        description: "Fund cards and payments with stablecoins across major chains, without touching the traditional banking rails.",
+        title: t('benefits.stablecoin.title'),
+        description: t('benefits.stablecoin.description'),
         bullets: [
             {
-                title: "Instant deposits",
-                description: "Move funds from wallet to card balance in seconds, with no waiting for bank settlement.",
+                title: t('benefits.stablecoin.bullet1.title'),
+                description: t('benefits.stablecoin.bullet1.description'),
                 icon: <FiDollarSign size={26} />
             },
             {
-                title: "Supports TRON, Ethereum, and BNB Chain",
-                description: "Fund using major stablecoin networks that match your treasury and liquidity setup.",
+                title: t('benefits.stablecoin.bullet2.title'),
+                description: t('benefits.stablecoin.bullet2.description'),
                 icon: <FiGitBranch size={26} />
             },
             {
-                title: "Multi-chain wallet integration",
-                description: "Connect multiple wallets and manage balances from a single control layer.",
+                title: t('benefits.stablecoin.bullet3.title'),
+                description: t('benefits.stablecoin.bullet3.description'),
                 icon: <FiBriefcase size={26} />
             }
         ],
         imageSrc: "/images/feature-2.png"
     },
     {
-        title: "Zero-Fee Pricing Model",
-        description: "Scale spend without worrying about opaque markups, hidden fees, or unpredictable FX spreads.",
+        title: t('benefits.zeroFee.title'),
+        description: t('benefits.zeroFee.description'),
         bullets: [
             {
-                title: "No hidden fees",
-                description: "Avoid surprise platform charges, junk fees, and add-ons that erode your margins.",
+                title: t('benefits.zeroFee.bullet1.title'),
+                description: t('benefits.zeroFee.bullet1.description'),
                 icon: <FiDollarSign size={26} />
             },
             {
-                title: "Industry-leading FX rates",
-                description: "Access competitive foreign exchange with transparent spreads on every transaction.",
+                title: t('benefits.zeroFee.bullet2.title'),
+                description: t('benefits.zeroFee.bullet2.description'),
                 icon: <FiPercent size={26} />
             },
             {
-                title: "Fully transparent cost structure",
-                description: "See exactly what you pay per transaction, card, and program — with no fine print.",
+                title: t('benefits.zeroFee.bullet3.title'),
+                description: t('benefits.zeroFee.bullet3.description'),
                 icon: <FiEye size={26} />
             }
         ],

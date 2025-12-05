@@ -1,38 +1,38 @@
 import { IPricing } from "@/types";
 
-export const tiers: IPricing[] = [
+export const getPricingTiers = (t: (key: string) => string): IPricing[] => [
     {
-        name: 'Starter',
+        name: t('pricing.tier.starter'),
         price: 0,
         features: [
-            '1 free virtual cards',
-            'USDT/USDC deposit fee: $0',
-            'USDT/USDC->USD conversion: 1:1',
-            'Crypto withdraw fee: ONLY network gas',
-            'Real-time transaction visibility',
-            'Freeze card any time',
-            'Email/Telegram support',
+            t('pricing.starter.feature1'),
+            t('pricing.starter.feature2'),
+            t('pricing.starter.feature3'),
+            t('pricing.starter.feature4'),
+            t('pricing.starter.feature5'),
+            t('pricing.starter.feature6'),
+            t('pricing.starter.feature7'),
         ],
     },
     {
-        name: 'Pro (Recommended)',
+        name: t('pricing.tier.pro'),
         price: 100,
         features: [
-            'Up to 10 virtual cards',
-            '1 free physical card',
-            '1 free metal physical card for $5000 spend',
-            'Priority email/Telegram support',
+            t('pricing.pro.feature1'),
+            t('pricing.pro.feature2'),
+            t('pricing.pro.feature3'),
+            t('pricing.pro.feature4'),
         ],
     },
     {
-        name: 'Enterprise',
-        price: 'Custom',
+        name: t('pricing.tier.enterprise'),
+        price: t('pricing.price.custom'),
         features: [
-            'Custom pricing',
-            'Unlimited virtual cards',
-            'One time-used cards',
-            'Customizable card spending limits',
-            'API integration',
+            t('pricing.enterprise.feature1'),
+            t('pricing.enterprise.feature2'),
+            t('pricing.enterprise.feature3'),
+            t('pricing.enterprise.feature4'),
+            t('pricing.enterprise.feature5'),
         ],
     },
 ]

@@ -69,7 +69,7 @@ const Header: React.FC = () => {
                             ) : (
                                 <HiBars3 className="h-6 w-6" aria-hidden="true" />
                             )}
-                            <span className="sr-only">Toggle navigation</span>
+                            <span className="sr-only">{t('common.toggleNavigation')}</span>
                         </button>
                     </div>
                 </nav>

@@ -1,9 +1,14 @@
+'use client';
+
 import { ctaDetails } from "@/data/cta"
+import { useLanguage } from "./LanguageProvider"
 
 import AppStoreButton from "./AppStoreButton"
 import PlayStoreButton from "./PlayStoreButton"
 
 const CTA: React.FC = () => {
+    const { t } = useLanguage();
+    
     return (
         <section id="cta" className="mt-10 mb-5 lg:my-20">
             <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
@@ -13,9 +18,9 @@ const CTA: React.FC = () => {
                     </div>
 
                     <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{t('cta.heading')}</h2>
 
-                        <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
+                        <p className="mx-auto max-w-xl md:px-5">{t('cta.subheading')}</p>
 
                         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
                             <a href={ctaDetails.getStartedUrl} className="w-full sm:w-auto">
@@ -23,7 +28,7 @@ const CTA: React.FC = () => {
                                     type="button"
                                     className="w-full rounded-full bg-white px-8 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-slate-100"
                                 >
-                                    Get started
+                                    {t('cta.getStarted')}
                                 </button>
                             </a>
                             <a href={ctaDetails.scheduleDemoUrl} className="w-full sm:w-auto">
@@ -31,7 +36,7 @@ const CTA: React.FC = () => {
                                     type="button"
                                     className="w-full rounded-full bg-white/10 px-8 py-3 text-base font-semibold text-white transition-colors border border-white/20 hover:bg-white/20"
                                 >
-                                    Schedule demo
+                                    {t('cta.scheduleDemo')}
                                 </button>
                             </a>
                         </div>
