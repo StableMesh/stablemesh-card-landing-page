@@ -16,7 +16,7 @@ export const getPricingTiers = (t: (key: string) => string): IPricing[] => [
     },
     {
         name: t('pricing.tier.pro'),
-        price: 100,
+        price: 25,
         features: [
             t('pricing.pro.feature1'),
             t('pricing.pro.feature2'),
